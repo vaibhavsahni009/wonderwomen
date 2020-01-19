@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Women Safety</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style type="text/css">
+	body{
+background-image: url(images/6.jpg);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+
+text-align: center;
+}
+
+#red{
+border-radius: 50%;
+padding: 20px;
+border-color: maroon;
+border-width: thick;
+
+
+}
+h1{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 60px;
+color: white;
+margin-top: 30px;
+}
+
+#blue1{
+border-width: thick;border-color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Women Safety!!</h1>
+<p> </p>
+<form action="user.html">
+	<p> <button type="submit" id="blue1"class="btn btn-primary btn-lg" style="margin:50px">Register As User</button></p>
+</form>
+<!-- <form> -->
+	<!-- <a href="./live_loc2.html" target="_blank"> -->
+		<p>
+			<button id="red" class="btn btn-light btn-lg" style="margin:50px">
+				<a href="./live_loc2.html" target="_blank"><p>EMERGENCY</p> 
+				<p>Help ASAP!!!</p></a>
+			</button>
+		</p>
+	<!-- </a> -->
+<!-- </form> -->
+
+<script type="text/javascript">
+	document.getElementById("red").addEventListener("click",()=>{
+		setTimeout(()=>{
+			window.location = "./message.php";
+		},5)
+	})
+</script>
+
+<form action="activist.html">
+	<p><button type="submit" id="blue1" class="btn btn-primary btn-lg" style="margin:50px">Register as ACTIVIST</button></p>
+</form>
+<form action="login.html">
+	<form action="activist.html">
+	<p><button type="submit" id="blue1" class="btn btn-primary btn-lg" style="margin:50px">Login Here</button></p>
+</form>
+</form>
+</body>
+</html>

